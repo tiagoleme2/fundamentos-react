@@ -2,16 +2,9 @@ import './index.css'
 import React from 'react'
 import ReactDom from 'react-dom'
 
-import Primeiro from './components/Primeiro'
-import ComParamentro from './components/ComParamentro'
+import App from './App.jsx'
 
 ReactDom.render(
-    <div>
-        <Primeiro />
-        <ComParamentro titulo="Esse é o titulo"
-        subtitulo="Esse é o subtitulo" />
-        <ComParamentro titulo="Opa"
-        subtitulo="Epa" />
-    </div>,
+    <App></App>,
     document.getElementById('root')
 )
