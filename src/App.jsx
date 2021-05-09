@@ -1,20 +1,20 @@
 import './App.css'
 import React from 'react'
 
-import Primeiro from './components/Primeiro'
-import ComParamentro from './components/ComParamentro'
-import ComFilhos from './components/ComFilhos'
+import Primeiro from './components/basicos/Primeiro'
+import ComParamentro from './components/basicos/ComParamentro'
+import ComFilhos from './components/basicos/ComFilhos'
 import Card from './components/layout/Card'
-import Repeticao from './components/Repeticao'
-import Condicional from './components/Condicional'
-import CondicionalComIf from './components/CondicionalComIf'
+import Repeticao from './components/basicos/Repeticao'
+import Condicional from './components/basicos/Condicional'
+import CondicionalComIf from './components/basicos/CondicionalComIf'
 
 
 export default props =>
 
     <div className="App">
         <Card titulo="#06 - Condicional com If">
-            <CondicionalComIf numero={10}></CondicionalComIf>
+            <CondicionalComIf numero={7}></CondicionalComIf>
         </Card>
         <Card titulo="#05 - Condicional 1">
             <Condicional numero={10}></Condicional>
