@@ -8,21 +8,32 @@ import Card from './components/layout/Card'
 import Repeticao from './components/basicos/Repeticao'
 import Condicional from './components/basicos/Condicional'
 import CondicionalComIf from './components/basicos/CondicionalComIf'
-
+import Pai from './components/comunicacao/direta/Pai'
+import Super from './components/comunicacao/indireta/Super'
+import Input from './components/form/Input'
 
 export default props =>
 
     <div className="App">
-        <Card titulo="#06 - Condicional com If">
+        <Card titulo="#09 - Input" color="#000">
+            <Input></Input>
+        </Card>
+        <Card titulo="#08 - Comunicação Indireta" color="#000">
+            <Super></Super>
+        </Card>
+        <Card titulo="#07 - Comunicação Direta" color="#008bba">
+            <Pai></Pai>
+        </Card>
+        <Card titulo="#06 - Condicional com If" color="#FA6900">
             <CondicionalComIf numero={7}></CondicionalComIf>
         </Card>
-        <Card titulo="#05 - Condicional 1">
+        <Card titulo="#05 - Condicional 1" color="#E94c6f">
             <Condicional numero={10}></Condicional>
         </Card>
-        <Card titulo="#04 - Repetição">
+        <Card titulo="#04 - Repetição" color="#008bba">
             <Repeticao></Repeticao>
         </Card>
-        <Card titulo="#03 - Componente com Filhos">
+        <Card titulo="#03 - Componente com Filhos" color="#d96459">
             <ComFilhos>
                 <ul>
                     <li>Ana</li>
@@ -32,13 +43,13 @@ export default props =>
                 </ul>
             </ComFilhos>
         </Card>
-        <Card titulo="#02 - Componente com Paramentro">
+        <Card titulo="#02 - Componente com Paramentro" color="#ff85cb">
             <ComParamentro titulo="Esse é o titulo"
                 subtitulo="Esse é o subtitulo" />
             <ComParamentro titulo="Opa"
                 subtitulo="E" />
         </Card>
-        <Card titulo="#01 - Primeiro Componente">
+        <Card titulo="#01 - Primeiro Componente" color="#92b064">
             <Primeiro />
         </Card>
 

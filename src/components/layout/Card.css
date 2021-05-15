@@ -11,7 +11,9 @@
 }
 
 .Card .Content 
-{   padding: 15px 0;
+{   
+    flex:1; 
+    padding: 15px 0;
     color: #000;
 }
 
